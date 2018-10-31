@@ -10,8 +10,7 @@ uiRoutes
   controller: 'RootController',
 });
 
-uiModules
-.get('app/alert')
-.controller('RootController', function ($scope) {
+const app = uiModules.get('apps/alert', []);
+app.controller('RootController', function ($scope) {
   $scope.description = 'alert';
 });
