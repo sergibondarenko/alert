@@ -1,12 +1,17 @@
-import { uiModules } from 'ui/modules';
+import uiModules from 'ui/modules';
+import uiRoutes from 'ui/routes';
 
-uiModules.get('apps/alert', []);
-require('ui/routes').enable();
+import rootTemplate from './templates/root_template.html';
 
-function controller() {};
+uiRoutes.enable();
+uiRoutes
+.when('/', {
+  template: rootTemplate,
+  controller: 'RootController',
+});
 
-require('ui/routes')
-  .when('/?', {
-    template: '<div><h1>hello</h1></div>',
-    controller
-  });
+uiModules
+.get('app/alerttrex')
+.controller('RootController', function ($scope) {
+  $scope.description = 'alert';
+});
