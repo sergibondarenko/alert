@@ -1,6 +1,6 @@
 {
   "name": "alert",
-  "version": "6.2.4",
+  "version": "6.4.2",
   "description": "It is a test hidden app",
   "main": "index.js",
   "scripts": {
