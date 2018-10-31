@@ -11,7 +11,7 @@ uiRoutes
 });
 
 uiModules
-.get('app/alerttrex')
+.get('app/alert')
 .controller('RootController', function ($scope) {
   $scope.description = 'alert';
 });
