@@ -6,7 +6,7 @@ module.exports = function (kibana) {
       'elasticsearch',
     ],
     uiExports: {
-      navbarExtensions: ['plugins/alert/navbar_extensions/dashboard_button/dashboard_button'],
+      navbarExtensions: [],
       apps: [{
         title: 'alert',
         id: 'alert',
